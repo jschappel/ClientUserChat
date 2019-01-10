@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:id="@+id/message_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="end">
+
+        <TextView
+                android:id="@+id/message_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingStart="8dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="4dp"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of"
+                android:textSize="20sp"
+                android:maxWidth="250dp"
+                android:background="@drawable/rounded_textview_user"/>
+
+        <TextView
+                android:id="@+id/username_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_below="@+id/message_field"
+                android:layout_alignEnd="@+id/message_field"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
